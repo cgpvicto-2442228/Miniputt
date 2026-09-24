@@ -100,7 +100,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3442083281149688181}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: aee502fb864298048af10108bcfba621, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -154,6 +154,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Balle
   force: 50
+  friction: 0.99
   lancerAction:
     m_Name: Lancer
     m_Type: 0
@@ -172,3 +173,4 @@ MonoBehaviour:
       m_Flags: 0
     m_Flags: 0
     m_Priority: 0
+  trans: {fileID: 0}

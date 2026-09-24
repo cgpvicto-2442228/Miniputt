@@ -2,15 +2,13 @@ using UnityEngine;
 
 public class Sticky : MonoBehaviour
 {
-    [SerializeField]
-    private Rigidbody rb;
 
     [SerializeField]
-    private float force = 0.7f;
+    private float force = 0.9f;
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
-        if (rb != null)
-            rb.linearVelocity *= force;
+        if (other.TryGetComponent(out Rigidbody rbBalle))
+            rbBalle.linearVelocity *= force;
     }
 }

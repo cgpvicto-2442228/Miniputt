@@ -106,4 +106,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Boost
   rb: {fileID: 0}
-  force: 50
+  force: 40

@@ -45,6 +45,26 @@
                     "interactions": "",
                     "initialStateCheck": true,
                     "priority": 0
+                },
+                {
+                    "name": "DirectionBalle",
+                    "type": "Value",
+                    "id": "d63095db-5049-4445-983b-0f385effec06",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true,
+                    "priority": 0
+                },
+                {
+                    "name": "ForceBalle",
+                    "type": "Value",
+                    "id": "8986b160-9211-4d0f-bc0b-7df5b2b8efd6",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true,
+                    "priority": 0
                 }
             ],
             "bindings": [
@@ -159,7 +179,7 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "negative",
+                    "name": "Positive",
                     "id": "e11e6287-1721-4dc2-b27f-a612f759a8c0",
                     "path": "<Keyboard>/e",
                     "interactions": "",
@@ -170,7 +190,7 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "positive",
+                    "name": "Negative",
                     "id": "dc7b8ef7-b67f-47f0-bad1-6f8c38a49c35",
                     "path": "<Keyboard>/q",
                     "interactions": "",
@@ -243,6 +263,72 @@
                     "processors": "",
                     "groups": "",
                     "action": "ZoomerCamera",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "1D Axis",
+                    "id": "7669b215-0b6f-4a68-97ce-dedca1e52207",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DirectionBalle",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "Positive",
+                    "id": "145ba409-e20d-4fcf-8155-e1c4382a4373",
+                    "path": "<Keyboard>/l",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DirectionBalle",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Negative",
+                    "id": "4dcbdb53-cbe2-45fc-a592-6f6439a92d5f",
+                    "path": "<Keyboard>/j",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DirectionBalle",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "1D Axis",
+                    "id": "4b188e87-181c-46c9-8c50-da762609e65c",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ForceBalle",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "Positive",
+                    "id": "9822d7ee-1634-40c2-844a-96b6996b81d6",
+                    "path": "<Keyboard>/i",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ForceBalle",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Negative",
+                    "id": "9ab7044d-61fe-4e71-8368-9c768d6764c3",
+                    "path": "<Keyboard>/k",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ForceBalle",
                     "isComposite": false,
                     "isPartOfComposite": true
                 }
